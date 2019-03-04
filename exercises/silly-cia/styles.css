@@ -1,0 +1,19 @@
+h1 {
+    color: darkgreen;  
+    font-family: Georgia;
+    text-align: center;
+}
+h2 {
+    font-family: Georgia;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+#paragraph {
+    text-transform: uppercase
+}
+.pic {
+    float: left;
+
+}
