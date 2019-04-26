@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    text-align: center;
+}
+
+body, html {
+    background-image: url("http://www.nesmaps.com/maps/SuperMarioBrothers/images/SMB1-1BG.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.form {
+    /* position: fixed; */
+    text-align: center;
+}
+.goomba {
+    background-size: 100px, 100px;
+    height: 100px;
+    width: 100px;
+}
+.bob {
+    background-size: 100px, 100px;
+    height: 100px;
+    width: 100px;
+}
+.cheep {
+    background-size: 100px, 100px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 0;
+}
+.result {
+    text-align: center;
+    display: block;
+    margin-bottom: 0;
+}

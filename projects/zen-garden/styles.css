@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 350px auto auto auto 350px;
+    grid-gap: 3px;
+    grid-template-areas: 
+    "hh hh hh hh hh hh hh hh mm mm mm mm"
+    "b1 b1 b1 b1 b1 b1 b1 b1 b2 b2 b2 b2"
+    "b3 b3 b3 b3 b3 b3 b3 b3 b4 b4 b4 b4"
+    "b5 b5 b5 b5 b5 b5 b5 b5 b6 b6 b6 b6"
+    "ff ff ff ff ff ff ff ff ff ff ff ff"
+
+}
+.banner {
+    grid-column: 1 / -1;
+    grid-area: hh;
+    background: url(http://www.csszengarden.com/214/huntington.jpg), no-repeat;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(http://www.csszengarden.com/214/huntington.jpg), no-repeat;
+    /* background-position: 0 0, 0 0, -5px -25px, 0 50%; */
+    /* background-repeat: no-repeat; */
+    /* background-size: auto, auto, auto, cover; */
+    padding: 50px;
+}
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 60px;
+    padding-top: 120px;
+    padding-right: 10px;
+    grid-column-gap: 1px;
+    grid-column: 1 / 4;
+    grid-area: mm;
+    background-image: url(http://www.csszengarden.com/214/koi.jpg);
+    position: relative;
+}
+.title {
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-bottom: none;
+    font-family: 'Julius Sans One', sans-serif, ;
+    font-size: 3.2em;
+    text-transform: uppercase;
+    
+}
+.title, .firstt {
+    padding: 0 0%;
+    margin: 0;
+    
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+.title::before {
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    content: "";
+    width: 125px;
+    height: 125px;
+    background: url(http://www.csszengarden.com/214/enso.svg);
+    background-size: 100%;
+    opacity: 0.6;
+    animation: koan 36000s infinite alternate;
+}
+.firstt {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border-top: none;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.6em;
+    font-style: italic;
+}
+.previous {
+    display: inline-block;
+    width: 80px;
+    background: rgba(255,255,255,0.1);
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    text-indent: 0;
+    font-size: 44px;
+    font-family: 'verdemoderna';
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 70px;
+    margin-left: 20px;
+}
+.next {
+    display: inline-block;
+    width: 80px;
+    background: rgba(255,255,255,0.1);
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    text-indent: 0;
+    font-size: 44px;
+    font-family: 'verdemoderna';
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 70px;
+    
+}
+
+@font-face {
+    font-family: verdemoderna;
+    src: url(verdemoderna.woff);
+
+}
+.gary {
+    text-decoration: none;
+    color:  rgba(255, 255, 255, 0.65);
+    /* height: 0px; */
+    text-align: center;
+    text-indent: 0;
+    font-size: 44px;
+    
+    font-family: 'verdemoderna';
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    /* line-height: 0px; */
+    -webkit-font-smoothing: antialiased;
+}
+.viewall {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    text-decoration: none;
+    line-height: 70px;
+    list-style: none;
+    text-align: center;
+    box-align: center;
+    margin-right: 0;
+    
+    
+}
+.viewall a {
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+    margin: 0 0 auto;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-style: normal;
+    /* display: inline-block; */
+    z-index: 2;
+    min-height: 70px;
+    /* padding: 12px 0 0 0; */
+    text-align: center;
+}
+a.abi {
+    padding-top: 0;
+    display: inline-block;
+}
+.footer {
+    grid-column: 1 / -1;
+    grid-area: ff;
+}
+.box1 {
+    grid-area: b1;
+    font-size: 1.4em;
+
+}
+.box2 {
+    grid-area: b2;
+    color: #325050;
+}
+.box3 {
+    grid-area: b3;
+    background-image: url(http://www.csszengarden.com/214/bamboo.png);
+    background-attachment: scroll, scroll, fixed;
+    background-color: rgba(138,188,159,0.5);
+    font-size: 1.4em;
+    /* background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png); */
+    /* background-repeat: repeat, repeat, no-repeat; */
+    /* background-size: auto, auto, cover; */
+}
+.box4 {
+    grid-area: b4
+}
+.box5 {
+    grid-area: b5;
+    font-size: 1.4em;
+
+}
+.box6 {
+    grid-area: b6
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 150px auto auto auto 150px;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "hh hh hh hh hh hh hh hh hh hh hh hh"
+        "mm mm mm mm mm mm mm mm mm mm mm mm"
+        "b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1"
+        "b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3"
+        "b5 b5 b5 b5 b5 b5 b5 b5 b5 b5 b5 b5"
+        "ff ff ff ff ff ff ff ff ff ff ff ff"
+        "b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2"
+        "b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4"
+    }
+    .h1 {
+        padding: 100px;
+    }
+    .banner {
+        padding: 0px;
+    }
+    .menu {
+        padding: 5px;
+    }
+}
