@@ -1,0 +1,218 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+html, body {
+	padding: 0;
+	margin: 0;
+}
+body {
+	color: #325050;
+	background: #fff;
+	font-family: 'Libre Baskerville', sans-serif;
+	font-size: 70%;
+}
+
+a {
+	color: #0d8ba1;
+	-webkit-transition: all 0.25s ease-out;
+	-moz-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+	text-decoration: none;
+}
+a:visited {
+	color: #1a5952;
+}
+a:hover, a:focus {
+	color: #0599c2;
+	text-decoration: underline;
+}
+abbr {
+	border: none;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	letter-spacing: 0.01em;
+}
+header {
+	height: 230px;
+	padding: 20px 0 70px 0;
+
+	background: #2d6360 50% 0 url(cover.jpg) no-repeat; /* old IE fallback */
+
+	background-attachment: fixed, fixed, fixed, scroll;
+	background-image: url(contours.png), url(noise.png), url(gridlines.png), url(cover.jpg);
+	background-position: 0 0, 0 0, -5px -25px, 0 50%;
+	background-repeat: repeat, repeat, repeat, no-repeat;
+	background-size: auto, auto, auto, cover;
+	text-align: center;
+}
+h1, h2 {
+	padding: 0 10%;
+	margin: 0;
+	color: #fff;
+	font-weight: normal;
+}
+h1 {
+	padding: 0 10%;
+	padding-bottom: 5px;
+	border-bottom: none;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 3.2em;
+	text-transform: uppercase;
+}
+h1::before {
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	content: "";
+	width: 80px;
+	height: 80px;
+	margin: -20px 20px 0 0;
+	background: url(enso.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 0.6;
+}
+h2 {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 30px;
+	border-top: none;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 1.6em;
+	font-style: italic;
+}
+h2::before {
+	content: " ";
+	padding: 50px;
+}
+h3 {
+	margin: 2em 0 0 0;
+	color: #2e494c;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 1.8em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+p {
+	margin: 0.75em 0;
+	line-height: 2;
+}
+
+.page-wrapper {
+	position: relative;
+}
+
+.sidebar {
+	background: #edf4f0;
+}
+.sidebar h3 {
+	display: none;
+}
+.sidebar a {
+	color: #607476;
+	text-decoration: none;
+}
+.sidebar a:hover, .sidebar a:focus {
+	color: #49968e;
+}
+.sidebar ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	overflow: hidden;
+}
+.disign-selection ul,.zen-resources ul {
+	margin: 0;
+}
+.disign-selection li, .zen-resources li {
+	float: left;
+	width: 50%;
+	padding: 1.5em 10%;
+	border-top: solid 1px #d9e3dc;
+	color: #c0cac3;
+	font-style: italic;
+}
+
+.disign-selection h3 {
+	display: none;
+}
+.disign-selection .disigner-name {
+	color: #616857;
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+.disign-archives {
+	position: absolute;
+	top: 160px;
+	right: 0;
+	width: 100%;
+	height: 70px;
+	background: rgba(255,255,255,0.2);
+}
+.disign-archives h3 {
+	display: none;
+}
+.design-archives ul {
+	margin: 0;
+  }
+  .design-archives li {
+	position: absolute;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	border: none;
+	list-style: none;
+  }
+  .design-archives li.viewall {
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0 71px;
+	line-height: 50px;
+  }
+  .previous, .next {
+	left: 0;
+	z-index: 3;
+  }
+.next {
+	left: auto;
+	right: 0;
+}
+.design-archives a, .design-archives a:visited {
+	color: rgba(255, 255, 255, 0.65);
+}
+.design-archives a:hover, .design-archives a:focus {
+	color: #fff;
+}
+.design-archives .previous a, .design-archives .next a {
+	display: block;
+	overflow: hidden;
+	width: 70px;
+	height: 70px;
+	text-indent: 100%;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.design-archives .viewall a {
+	z-index: 2;
+	width: 100%;
+	min-height: 70px;
+	padding: 12px 0 0 0;
+	text-align: center;
+}
+.design-archives a::before {
+	position: absolute;
+	left: 0;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	text-indent: 0;
+	font-size: 44px;
+}  
+
+

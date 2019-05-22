@@ -4,7 +4,7 @@ console.log("my name is: " + name);
 const player = {
     name: name,
     health: 200,
-    attack: 30,
+    attack: 40,
     inventory: []
 }
 function Enemy(name, health, attack, description) {
@@ -38,7 +38,7 @@ function walk() {
 
 }
 
-// index = readline.keyInSelect(action, 'lets go!');
+// const index = readline.keyInSelect(action, 'lets go!');
 // // console.log(action[index])
 
 function encounter() {
@@ -54,17 +54,17 @@ function encounter() {
     }
 }
 
-// function run() {
-//     if (Math.random() < .5) {
-//         console.log('you got away')
-//         walk();
-//     } else {
-//         console.log('NO RUNNING!')
-//         console.log('you are beening attacked')
-//         console.log('you must fight')
-//         var chance = Math.floor(Math.random() * enemies.length);
-//     }
-// }
+function run() {
+    if (Math.random() < .5) {
+        console.log('you got away')
+        walk();
+    } else {
+        console.log('NO RUNNING!')
+        console.log('you are beening attacked')
+        console.log('you must fight')
+        var chance = Math.floor(Math.random() * enemies.length);
+    }
+}
 // function checkHealth(enemy.health){
 //     if ()
 // }
@@ -77,7 +77,7 @@ function fight(enemy, index) {
         var action = readline.keyIn('What will you do? [M] Melee, [S] Shoot, [I] Inventory, [R] Run ', { limit: 'msir' });
 
         if (action === 'm') {
-            var battlehit = player.attack + Math.floor(Math.random() * 30);
+            var battlehit = player.attack + Math.floor(Math.random() * 40);
             var enemyhit = enemy.attack + Math.floor(Math.random() * 20);
             enemy.health -= battlehit;
             player.health -= enemyhit;
@@ -93,18 +93,19 @@ function fight(enemy, index) {
         } else if (action === 'i') {
             console.log('Nothing to be used here!')
         } else if (action === 'r') {
-            if (Math.random() < .5) {
-                console.log('you got away')
-               return walk();
-            } else {
+            if (Math.random() < .3) {
                 console.log('NO RUNNING!')
                 console.log('you are beening attacked')
                 console.log('you must fight')
+                fight();
+            } else {
+                console.log('you got away')
             }
         }
-    }
-    if (enemy.health <= 0) {
+    if (enemy.health < 0) {
         enemyDie(index);
+    } else {
+        win()
     }
 
 
