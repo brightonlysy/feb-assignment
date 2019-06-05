@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app-container > button {
+    background-color: gray;
+    border: 1px solid black;
+    color: black;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    margin: 20px;
+    top: 60px;
+}
+
+.wrapper {
+    
+}
+
+.main {
+    height: 150vh;
+    background-image: url('pexels-photo-1482936.jpeg');
+    width: 100vw;
+    background-size: cover;
+}
+
+.container {
+    
+}
+
+.title {
+    text-align: center;
+    
+}
+
+.form {
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+
+}
+
+.nav {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: rgba(92, 92, 92, 0.6);
+    transition: left 250ms linear;
+    top: 0;
+    left: 0px;
+}
+
+.nav > p {
+    font-size: 2em;
+}
+
+.nav-closed {
+    left: -100vw;
+}
+
+.nav-open {
+    left: 100vw;
+}
+
+input {
+    display: grid;
+    margin: 10px;
+}
+
+.input1 {
+    text-align: center;
+}
+
+.input2 {
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    /* justify-content: center;
+    align-content: center; */
+    border: 1px solid indigo;
+    margin: 30px;
+    color: indigo;
+    background-color: pink;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid gray;
+    margin: 30px;
+    padding: 30px;
+}
+
+.h1 {
+    margin: 70px;
+    /* border: 0.5px solid blueviolet; */
+}
+
+.p1 {
+    margin: 20px;
+    /* border: 1px  solid  red; */
+}
+
+.here {
+    align-content: center;
+    margin: 10px;
+}
