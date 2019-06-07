@@ -20,7 +20,7 @@ class Cover extends Component {
             loop: true
         };
         return (
-            <div>
+            <div id="home" >
                  
                 <div className='video'>
                     <VideoCover
@@ -39,6 +39,7 @@ class Cover extends Component {
                         
                     </div>
                 </header>
+                <p id='about'></p>
             </div>
         );
     }

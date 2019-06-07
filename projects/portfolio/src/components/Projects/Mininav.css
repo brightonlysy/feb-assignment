@@ -1,0 +1,37 @@
+.mini {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    /* position: fixed; */
+    bottom: inherit;
+    padding-top: 10%;
+}
+
+.wrap {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.all {
+    padding-right: 5%;
+    padding-left: 5%;
+    color: white;
+    background-color: red;
+}
+.react {
+    padding-right: 5.8%;
+    padding-left: 5.8%;
+    /* background-color: red; */
+}
+.java {
+    padding-right: 5.8%;
+    padding-left: 5.8%;
+    /* background-color: red; */
+}
+.css {
+    padding-right: 5.8%;
+    padding-left: 5.8%;
+    background-color: red;
+}
